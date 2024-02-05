@@ -148,7 +148,15 @@ export default () => (
           </h2>
           <div id="gradingPeriodsCollapse" class="accordion-collapse collapse" aria-labelledby="gradingPeriodsHeading" data-bs-parent="#gradingPeriodsCollapse">
             <div class="accordion-body">
-              grading periods
+              Generate new grading periods
+              Generate grading periods per new term
+              Create grading periods for existing account(s)
+              Create grading periods for existing term(s)
+              Evenly distribute new grading periods
+              Number of new grading periods
+              Number of new grading periods range
+              Grading period name template
+              Grading period SIS template
             </div>
           </div>
 
