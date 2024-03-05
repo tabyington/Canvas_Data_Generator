@@ -9,7 +9,16 @@ export default () => (
     </h2>
     <div id="coursesCollapse" class="accordion-collapse collapse" aria-labelledby="coursesHeading" data-bs-parent="#coursesCollapse">
       <div class="accordion-body">
-        courses
+        Number of new courses
+        Courses spread across new accounts
+        Even account spread
+        Courses spread across new terms
+        Even term spread
+        Course name template
+        Course sis template
+        Courses use term dates
+        Include concluded courses
+        
       </div>
     </div>
   </div>
