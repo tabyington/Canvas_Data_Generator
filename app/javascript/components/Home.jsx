@@ -12,49 +12,31 @@ import Enrollments from "./form_components/enrollments";
 import Groups from "./form_components/groups";
 import Assignments from "./form_components/assignments";
 
-function Form() {
-  const [formData, setFormData] = useState({
-    general: {},
-  });
+export default () => (
+  <div className="vw-50 vh-50 primary-color d-flex align-items-center justify-content-center">
+    <div className="container secondary-color">
 
-  const handleGeneralSettingsChange = (general) => {
-    setFormData({ ...formData, general });
-  };
+      <h1 className="display-4 secondary-color">Data Geneneration Options</h1>
+      <p className="lead">
+        Select the data needed and click "Generate" at the bottom of the page.
+      </p>
+      <hr className="my-4" />
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data: ", formData);
-  };
-
-  return (
-    <div className="vw-50 vh-50 primary-color d-flex align-items-center justify-content-center">
-      <div className="container secondary-color">
-        <form onSubmit={handleSubmit}>
-          <Manage_connections />
-          <h1 className="display-4 secondary-color">Data Geneneration Options</h1>
-          <p className="lead">
-            Select the data needed and click "Generate" at the bottom of the page.
-          </p>
-          <hr className="my-4" />
-
-          <div class="accordion" id="optionsAccordion" prefers-reduced-motion="true">
-            < General />
-            < Users />
-          </div>
-
-          <hr className="my-4" />
-          <Link
-            to="/home"
-            className="btn btn-lg custom-button"
-            role="button"
-          >
-            Generate
-          </Link>
-        </form>
+      <div class="accordion" id="optionsAccordion" prefers-reduced-motion="true">
+        < Users />
+        < Courses />
+        < Sections />
       </div>
+
+      <hr className="my-4" />
+      <Link
+        to="/home"
+        className="btn btn-lg custom-button"
+        role="button"
+      >
+        Generate
+      </Link>
     </div>
+  </div>
 
-  );
-}
-
-export default home;
+);
