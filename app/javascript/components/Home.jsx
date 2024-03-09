@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Template_guide from "./form_components/templateGuide";
 import Manage_connections from "./manage_connections";
 import General from "./form_components/general";
 import Accounts from "./form_components/accounts";
@@ -22,10 +23,14 @@ export default () => (
       </p>
       <hr className="my-4" />
 
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#templateGuide" aria-controls="templateGuide">
+        Template Guide
+      </button>
+      <Template_guide />
       <div class="accordion" id="optionsAccordion" prefers-reduced-motion="true">
-        < Users />
         < Courses />
         < Sections />
+        < Users />
       </div>
 
       <hr className="my-4" />

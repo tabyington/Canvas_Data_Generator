@@ -3,16 +3,24 @@ import React from "react";
 export default () => (
   <div class="accordion-item">
     <h2 class="accordion-header" id="coursesHeading">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coursesCollapse" aria-expanded="false" aria-controls="coursesCollapse">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#coursesCollapse" aria-expanded="true" aria-controls="coursesCollapse">
         Course settings
       </button>
     </h2>
-    <div id="coursesCollapse" class="accordion-collapse collapse" aria-labelledby="coursesHeading" data-bs-parent="#coursesCollapse">
+    <div id="coursesCollapse" class="accordion-collapse collapse show" aria-labelledby="coursesHeading" data-bs-parent="#coursesCollapse">
       <div class="accordion-body">
         <div class="input-group input-group-sm mb-1">
           <span class="input-group-text" id="courseCountLabel">Number of Courses to Create :</span>
-          <input type="number" id="observerCount" defaultValue="0" min="0" />
+          <input type="number" id="courseCount" defaultValue="0" min="0" />
         </div>
+
+        <div class="input-group input-group-sm mb-1">
+          <span class="input-group-text" id="useCustomCourseTemplateLabel">Use custom name/id templates :</span>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="useCustomCourseTemplate" defaultValue="false" />
+          </div>
+        </div>
+
         <div class="input-group input-group-sm mb-1">
           <span class="input-group-text" id="courseNameTemplateLabel">Course Name Template :</span>
           <input type="text" class="form-control" placeholder="Test{N[0:100]} Course{N[0:100]}" />
@@ -29,7 +37,7 @@ export default () => (
           <span class="input-group-text" id="courseTermLabel">Course Term :</span>
           <input type="text" class="form-control" placeholder="1" />
         </div>
-{/*
+        {/*
         Courses spread across new accounts
         Even account spread
         Courses spread across new terms

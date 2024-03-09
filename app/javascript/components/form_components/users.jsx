@@ -7,7 +7,7 @@ export default () => (
         User settings
       </button>
     </h2>
-    <div id="usersCollapse" class="accordion-collapse collapse show" aria-labelledby="usersHeading" data-bs-parent="#usersCollapse">
+    <div id="usersCollapse" class="accordion-collapse collapse" aria-labelledby="usersHeading" data-bs-parent="#usersCollapse">
       <div class="accordion-body">
 
         <div class="input-group input-group-sm mb-1">
