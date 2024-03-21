@@ -23,20 +23,29 @@ export default () => (
 
         <div class="input-group input-group-sm mb-1">
           <span class="input-group-text" id="courseNameTemplateLabel">Course Name Template :</span>
-          <input type="text" class="form-control" placeholder="Test{N[0:100]} Course{N[0:100]}" />
+          <input type="text" class="form-control" id="courseNameTemplate" placeholder="Test{N[0:100]} Course{N[0:100]}" />
         </div>
         <div class="input-group input-group-sm mb-1">
           <span class="input-group-text" id="CourseSisTemplateLabel">Course SIS-ID Template :</span>
-          <input type="text" class="form-control" placeholder="course{N[0:100]}Test" />
+          <input type="text" class="form-control" id="CourseSisTemplate" placeholder="course{N[0:100]}Test" />
         </div>
         <div class="input-group input-group-sm mb-1">
-          <span class="input-group-text" id="courseCodeLabel">Course Code Template :</span>
-          <input type="text" class="form-control" placeholder="course{N[0:100]}Test" />
+          <span class="input-group-text" id="courseCodeTemplateLabel">Course Code Template :</span>
+          <input type="text" class="form-control" id="courseCodeTemplate" placeholder="course{N[0:100]}Test" />
         </div>
         <div class="input-group input-group-sm mb-1">
           <span class="input-group-text" id="courseTermLabel">Course Term :</span>
-          <input type="text" class="form-control" placeholder="1" />
+          <input type="text" class="form-control" id="courseTerm" placeholder="1" />
         </div>
+        <div class="input-group input-group-sm mb-1">
+          <span class="input-group-text" id="courseMinSectionsLabel">Minimum sections per course :</span>
+          <input type="number" id="courseMinSections" defaultValue="0" min="0" />
+        </div>
+        <div class="input-group input-group-sm mb-1">
+          <span class="input-group-text" id="courseMaxSectionsLabel">Maximum sections per course :</span>
+          <input type="number" id="courseMinSections" defaultValue="0" min="0" />
+        </div>
+
         {/*
         Courses spread across new accounts
         Even account spread
