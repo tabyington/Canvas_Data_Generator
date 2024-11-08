@@ -2,6 +2,8 @@
 
 This will be updated as I go
 
+You can set up your own canvas lms server by following this guide https://github.com/instructure/canvas-lms/wiki/Quick-Start if you want to play along at home.
+
 ---
 
 I lost a lot of work and my libraries when I left Instructure due to having to transfer my repos to them. It's fair enough, I wrote them to use for their testing. I'll have to make new ones before much work will progress here. 
