@@ -2,7 +2,7 @@
 
 This will be updated as I go
 
-You can set up your own Canvas lms server by following this guide https://github.com/instructure/canvas-lms/wiki/Quick-Start if you want to play along at home. (This is literally the guide I always referenced when I needed to do a fresh install of Canvas while working for Instructure. I can verify the manual install works with Apple silicon.
+You can set up your own Canvas lms server by following this guide https://github.com/instructure/canvas-lms/wiki/Quick-Start if you want to play along at home. (This is literally the guide I always referenced when I needed to do a fresh install of Canvas while working for Instructure.) I can verify the manual install works with Apple silicon.
 
 ---
 
